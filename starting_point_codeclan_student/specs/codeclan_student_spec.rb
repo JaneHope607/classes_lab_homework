@@ -17,7 +17,7 @@ class CodeclanStudent < Minitest::Test
 
     def test_set_name()
         student = Student.new("Robert", "E43")
-        student.name = 
+        student.set_name("Jacob")
         assert_equal("Jacob", student.name())
     end
 
