@@ -21,7 +21,7 @@ class Team
     end
 
     def points_update(result)
-        @points += 1 if result == "win"
+        @points += 1 if (result == "win")
         @points -=1 if result == "lose"
     end
 
