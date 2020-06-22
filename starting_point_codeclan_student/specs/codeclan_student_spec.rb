@@ -11,8 +11,8 @@ class CodeclanStudent < Minitest::Test
     end
 
     def test_cohort()
-        student = Student.new("Robbie", "E32")
-        assert_equal("E32", student.cohort)
+        student = Student.new("Robbie", "E30")
+        assert_equal("E30", student.cohort)
     end
 
     def test_student_talks
