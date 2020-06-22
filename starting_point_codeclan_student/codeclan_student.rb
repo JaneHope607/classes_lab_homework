@@ -22,7 +22,7 @@ class Student
     end
 
     def student_talks()
-        return "Hi, I am talking!"
+        return "Hi I am talking!"
     end
 
     def say_favourite_language(language)
