@@ -33,4 +33,14 @@ class TestTeam < Minitest::Test
         assert_equal(["Smith", "Will", "Rob", "Emma", "Jane"], new_team.players())
     end
 
+    def test_check_for_player__found()
+        new_team = Team.new("The Rovers", ["Jane", "Bob", "Rob", "Emma"], "Will Smith")
+        assert_equal(true, new_team.check_for_player("Jane"))
+    end
+
+    def test_check_for_player__not_found()
+        new_team = Team.new("The Rovers", ["Jane", "Bob", "Rob", "Emma"], "Will Smith")
+        assert_equal(false, new_team.check_for_player("Bill"))
+    end
+
 end

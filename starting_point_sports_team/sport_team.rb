@@ -6,10 +6,18 @@ class Team
         @team_name = team_name
         @players = players
         @coach = coach
+        @points = 0
     end
 
     def add_new_player(new_player)
         @players.push(new_player)
+    end
+
+    def check_for_player(player_name)
+       for player in @players
+        return true if player == player_name 
+       end
+       return false
     end
 
     # def team_name
