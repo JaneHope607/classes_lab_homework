@@ -21,4 +21,10 @@ class TestTeam < Minitest::Test
         assert_equal("Will Smith", new_team.coach())
     end
 
+    def test_set_coach
+        new_team = Team.new("The Penguins", ["Smith", "Will", "Rob", "Emma"], "Will Smith")
+        new_team.coach = "Rob Ross"
+        assert_equal("Rob Ross", new_team.coach())
+    end
+
 end
