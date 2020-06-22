@@ -2,7 +2,7 @@ class Team
 
     attr_accessor :team_name, :balance, :coach
 
-    def initialize(team_name, players, )
+    def initialize(team_name, players, coach)
         @team_name = team_name
         @players = players
         @coach = coach
