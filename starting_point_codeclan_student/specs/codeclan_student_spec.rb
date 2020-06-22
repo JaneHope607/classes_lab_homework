@@ -15,6 +15,19 @@ class CodeclanStudent < Minitest::Test
         assert_equal("E30", student.cohort())
     end
 
+    def test_set_name()
+        student = Student.new("Robert", "E43")
+        student.name = 
+        assert_equal("Jacob", student.name())
+    end
+
+    def test_set_cohort()
+        student = Student.new("Emmma", "E41")
+        student.set_cohort("E38")
+        assert_equal("E38", student.cohort())
+    end
+
+
     def test_student_talks
         student = Student.new("Jessica", "E42")
         string = student.student_talks()
