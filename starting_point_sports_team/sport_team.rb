@@ -15,7 +15,7 @@ class Team
 
     def check_for_player(player_name)
        for player in @players
-        return true if player == player_name 
+        return true if (player == player_name)
        end
        return false
     end
